@@ -11,11 +11,17 @@
 	+^c::Send,{Media_Next}
 	+^v::winactivate, ahk_class SpotifyMainWindow
 	
-; ************************************************************************************
-; * ACTIVATE SKYPE
-; ************************************************************************************
 	!^v::
-		WinActivate, ahk_exe Skype.exe
+		WinActivate, ahk_exe outlook.exe
+	Return
+
+	
+	!^c::
+		WinActivate, ahk_exe onenote.exe
+	Return
+
+	!^x::
+		WinActivate, ahk_exe webstorm64.exe
 	Return
 	
 ; ************************************************************************************
