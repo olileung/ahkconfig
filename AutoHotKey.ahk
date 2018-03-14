@@ -9,7 +9,7 @@
 	return
 	
 	+^c::Send,{Media_Next}
-	+^v::winactivate, ahk_class SpotifyMainWindow
+	+^v::winactivate, ahk_exe Spotify.exe
 	
 	!^v::
 		WinActivate, ahk_exe outlook.exe
