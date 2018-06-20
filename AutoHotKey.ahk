@@ -45,6 +45,9 @@
 ; * ACTIVATE SLACK
 ; ************************************************************************************
 	!^b::
-		WinActivate, ahk_exe Slack.exe
-	Return
+		If WinActive("ahk_exe Slack.exe") Then
+			WinMinimize
+		Else 
+			WinActivate, ahk_exe Slack.exe
+	return
 
