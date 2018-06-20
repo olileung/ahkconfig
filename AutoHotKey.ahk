@@ -9,7 +9,14 @@
 	return
 	
 	+^c::Send,{Media_Next}
-	+^v::winactivate, ahk_exe Spotify.exe
+	
+	+^v::
+		If WinActive("ahk_exe Spotify.exe") Then
+			WinMinimize
+		Else 
+			WinActivate, ahk_exe Spotify.exe
+		return
+	Return
 	
 	!^v::
 		WinActivate, ahk_exe outlook.exe
