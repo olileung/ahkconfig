@@ -40,6 +40,9 @@
 	+^a::
 		Send {Volume_Down}
 	Return
+	+^s::
+		SoundSet, +1, , mute 
+	Return
 	
 ; ************************************************************************************
 ; * ACTIVATE SLACK
@@ -50,4 +53,5 @@
 		Else 
 			WinActivate, ahk_exe Slack.exe
 	return
+
 
